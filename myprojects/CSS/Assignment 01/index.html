@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1 (Using Absolute & Relative)</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+
+        body > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            z-index: 100;
+        }
+
+        body > section:nth-child(1) {
+            background: red;
+            left: 0;
+            top: 0;
+        }
+
+        body > section:nth-child(2) {
+            background: green;
+            right: 0;
+            top: 0;
+        }
+
+        body > section:nth-child(3) {
+            background: orange;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > section:nth-child(4) {
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body > div {
+            position: absolute;
+            z-index: 200;
+            background-color: white;
+            width: 125px;
+            height: 125px;
+
+        }
+
+        body > div:nth-child(5){
+            border-bottom-right-radius: 90px;
+            left: 0;
+            top: 0;
+        }
+
+        body > div:nth-child(6){
+            border-bottom-left-radius: 90px;
+            right: 0;
+            top: 0;
+        }
+
+        body > div:nth-child(7){
+            border-top-right-radius: 90px;
+            left: 0;
+            bottom: 0;
+        }
+
+        body > div:nth-child(8){
+            border-top-left-radius: 90px;
+            right: 0;
+            bottom: 0;
+        }
+
+        body > div:nth-child(9){
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+        }
+
+        body>div>div{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            border-radius: 100%;
+            background-color: red;
+            margin: auto;
+            width: 120px;
+            height: 120px;
+        }
+
+        body>div:nth-child(10){
+            width: 200px;
+            height: 100px;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            border-bottom-right-radius: 108px;
+            border-bottom-left-radius: 108px;
+        }
+
+        body>div:nth-child(11){
+            width: 200px;
+            height: 100px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border-top-right-radius: 108px;
+            border-top-left-radius: 108px;
+        }
+
+        section > div {
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        section > div > div {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+<!--main sections-->
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<!--for circles-->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!--middle box-->
+<div>
+    <div></div>
+</div>
+
+<!--middle half circles-->
+<div></div>
+<div></div>
+
+
+</body>
+</html>

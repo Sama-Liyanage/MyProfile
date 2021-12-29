@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions</title>
+  <link href="../../../assets/css/fonts/css/all.css" rel="stylesheet">
+  <link href="../../../assets/css/normalize.css" rel="stylesheet">
+
+  <style>
+    section {
+      width: 228px;
+      height: 492px;
+      top: 91px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      right: 172px;
+    }
+
+    section > div {
+      left: 0;
+      height: 40px;
+      position: relative;
+      background: #1d33ab;
+      color: white;
+      box-shadow: 1px 2px 3px 2px #3a483b;
+      transition: all 2s;
+    }
+
+    section > div > h3 {
+      margin: 0;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    section > div > i {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      font-size: 28px;
+    }
+
+    section > div:hover {
+      background: chartreuse;
+      left: 172px;
+      cursor: pointer;
+      transition: all 2s;
+    }
+
+    p{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      color: #ff025f;
+      font-size: 4em;
+      margin: 0;
+    }
+  </style>
+
+
+</head>
+<body>
+<P>Transitions</P>
+
+<section>
+
+  <div>
+    <h3>Menu One</h3>
+    <i class="fa fa-car" aria-hidden="true"></i></div>
+  <div>
+    <h3>Menu Two</h3>
+    <i class="fa fa-address-book" aria-hidden="true"></i>
+  </div>
+  <div>
+    <h3>Menu Three</h3>
+    <i class="fa fa-university" aria-hidden="true"></i>
+  </div>
+  <div>
+    <h3>Menu Four</h3>
+    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+  </div>
+  <div>
+    <h3>Menu Five</h3>
+    <i class="fa fa-bicycle" aria-hidden="true"></i>
+  </div>
+
+</section>
+
+</body>
+</html>

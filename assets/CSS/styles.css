@@ -1,0 +1,80 @@
+/*header start*/
+header{
+    background-color:#FFAB91;
+    position: fixed;
+    height: 80px;
+    width:100%;
+    top:0;
+    box-shadow: 0px 8px 3px  #e08e79;
+    z-index: 50;
+}
+
+header>nav>ul{
+    list-style: none;
+    display:inline-block;
+    justify-content: center;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+}
+
+header>nav>ul>li{
+    display:inline-block;
+    padding: 0px 30px 0px 30px;
+}
+
+
+header>nav>ul>li:nth-child(4){
+    font-family: "Book Antiqua";
+}
+
+header>ul>li:hover{
+    cursor: pointer;
+}
+
+header a:link {
+    text-decoration: none;
+}
+/*header end*/
+
+/*section 1 start*/
+main>section>section:nth-child(1)>div{
+    top: 100px;
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+    font-size: 50px;
+}
+
+main>section>section:nth-child(1)>div>pre>dfn{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main>section>section:nth-child(1)>section{
+    position: relative;
+    top: 88px;
+    height: 100vh;
+}
+
+main>section>section:nth-child(1)>section>img{
+    position: relative;
+    height: 100vh;
+    width: 1518px;
+}
+/*section 1 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

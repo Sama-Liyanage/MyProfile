@@ -70,6 +70,7 @@ main>section>section:nth-child(1)>section>img{
 /*About section start*/
 main>section>section:nth-child(2){
     position: relative;
+    height:100vh;
     top: 87px;
     background-color: #FAF9F6;
 }
@@ -123,20 +124,23 @@ main>section>section:nth-child(2)>section:nth-child(2)>pre:nth-child(4){
 main>section>section:nth-child(3) {
     position: relative;
     top: 65px;
+    height: 100vh;
 }
 
 main>section>section:nth-child(3) dfn{
     position:absolute;
     left: 642px;
-    bottom: 350px;
+    bottom: 700px;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Rochester', cursive;
     font-family: 'Shalimar', cursive;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 main>section>section:nth-child(3)>div {
     width: 30%;
+    position: relative;
+    top: 163px;
     /*border: solid 1px ;*/
 }
 
@@ -151,7 +155,7 @@ main>section>section:nth-child(3)>div>h3{
     left: 151px;
     top: 130px;
     width: 125px;
-    /*box-shadow: 15px 10px 0px ;*/
+
 }
 
 
@@ -164,7 +168,7 @@ main>section>section:nth-child(3){
 main>section>section:nth-child(3)>div>img{
     position: relative;
     bottom: 40px;
-    width: 127px;
+    width: 100px;
     left: 162px;
 }
 
@@ -174,7 +178,127 @@ main>section>section:nth-child(3)>div>img{
 main>section>section:nth-child(4) {
     position: relative;
     top: 180px;
+    background-color: #fffafa;
+    width:auto;
+    height: 100vh;
+
 }
+
+main>section>section:nth-child(4)>h1{
+    position: absolute;
+    left: 641px;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rochester', cursive;
+    font-family: 'Shalimar', cursive;
+
+}
+
+main>section>section:nth-child(4)>section{
+    display: grid;
+    grid-template-rows:150px 150px 150px 150px;
+    grid-template-columns:200px 200px 200px;
+    /*position: relative;*/
+    top: 100px;
+    position: absolute;
+    left: 395px;
+}
+
+main>section>section:nth-child(4)>section>div{
+    border: 1px solid green;
+}
+
+main>section>section:nth-child(4)>section>div>img{
+    left: 30px;
+}
+
+/*My Service Section end*/
+
+/*Education Section Start*/
+main>section>section:nth-child(5){
+    position: relative;
+    top: 158px;
+    height: 100vh;
+    background-color: #EDF2F8;
+
+}
+
+main>section>section:nth-child(5) h1{
+    position: absolute;
+    top: 0px;
+    left: 184px;
+
+}
+
+main>section>section:nth-child(5) img{
+    width: 120px;
+}
+
+main>section>section:nth-child(5)>section:nth-child(3){
+    position: absolute;
+    height: 89px;
+    left: 391px;
+    background-color: #FFFFFF;
+    box-shadow: 15px 10px 0px #616161;
+
+}
+
+
+main>section>section:nth-child(5)>section:nth-child(3) img{
+    position: relative;
+    top: 18px;
+    left: 20px;
+}
+
+/*Education ijse part */
+main>section>section:nth-child(5)>section:nth-child(3) pre{
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+}
+
+main>section>section:nth-child(5)>section:nth-child(4){
+    position: absolute;
+    top: 278px;
+    background-color: #FFFFFF;
+    left: 391px;
+    width: 595px;
+    height: 95px;
+    box-shadow: 15px 10px 0px #616161;
+}
+
+main>section>section:nth-child(5)>section:nth-child(4) img{
+    width: 90px;
+    position: relative;
+
+}
+
+/*Education  scl part */
+main>section>section:nth-child(5)>section:nth-child(4) pre{
+    position: relative;
+    left: 19px;
+    bottom: 103px;
+}
+
+main>section>section:nth-child(5)>blockquote:nth-child(5){
+    position: relative;
+    top: 440px;
+    left: 28px;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -121,7 +121,28 @@ main>section>section:nth-child(2)>section:nth-child(2)>pre:nth-child(4){
     right: 185px;
 }
 
+main>section>section:nth-child(2)>section:nth-child(2)>a:nth-child(5){
+    position: relative;
+    left: 546px;
+    top: 21px;
 
+}
+
+main>section>section:nth-child(2)>section:nth-child(2)>div:nth-child(6){
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    right: -70px;
+    top: 434px;
+    cursor:pointer;
+
+}
+
+main>section>section:nth-child(2)>section:nth-child(2)>div:nth-child(6) img{
+    width: 35px;
+}
 
 /*----------------------------------------------------------------------------------------------*/
 
@@ -153,46 +174,47 @@ main>section>section:nth-child(3)>div {
 
 main>section>section:nth-child(3)>div:nth-child(2)>h3{
 
-    font-size: 15px;
+    height: 43px;
+    font-size: 20px;
     position: relative;
     left: 151px;
-    top: 235px;
-    width: 125px;
+    top: 278px;
+    width: 172px;
     background-color: #D7CCC8;
     box-shadow: 15px 10px 0px #bdbdbd;
 
 }
 
 main>section>section:nth-child(3)>div:nth-child(3)>h3{
-
-    font-size: 15px;
+    height: 43px;
+    font-size: 20px;
     position: relative;
     left: 151px;
-    top: 235px;
-    width: 125px;
+    top: 278px;
+    width: 169px;
     background-color: #D7CCC8;
     box-shadow: 15px 10px 0px #bdbdbd;
 
 }
 
 main>section>section:nth-child(3)>div:nth-child(4)>h3{
-
-    font-size: 15px;
+    height: 43px;
+    font-size: 20px;
     position: relative;
     left: 151px;
-    top: 235px;
-    width: 125px;
+    top: 278px;
+    width: 173px;
     background-color: #D7CCC8;
     box-shadow: 15px 10px 0px #bdbdbd;
 }
 
 main>section>section:nth-child(3)>div:nth-child(5)>h3{
-
-    font-size: 15px;
+    height: 43px;
+    font-size: 20px;
     position: relative;
     left: 151px;
-    top: 235px;
-    width: 125px;
+    top: 278px;
+    width: 172px;
     background-color: #D7CCC8;
     box-shadow: 15px 10px 0px #bdbdbd;
 
@@ -202,7 +224,7 @@ main>section>section:nth-child(3)>div:nth-child(5)>h3{
 main>section>section:nth-child(3)>div>img{
     position: relative;
     bottom: 40px;
-    width: 155px;
+    width: 173px;
     left: 162px;
     box-shadow: 0px 30px 10px 10px #d1c4e9;
 }
@@ -276,7 +298,7 @@ main>section>section:nth-child(5){
     position: relative;
     top: 158px;
     height: 500px;
-    background-color:#cfd8dc;
+    background-color:#EDF2F8;
 
 }
 
@@ -338,12 +360,13 @@ main>section>section:nth-child(5)>section:nth-child(4) pre{
 }
 
 main>section>section:nth-child(5)>blockquote:nth-child(5){
-    position: relative;
-    top: 440px;
+    position: absolute;
+    top: 409px;
     left: 28px;
     font-family: 'News Cycle', sans-serif;
     font-size: 25px;
 }
+
 
 
 /*Education section end*/
@@ -371,6 +394,7 @@ main>section>section:nth-child(7){
     background-color: #fafafa;
     position: relative;
     top: 115px;
+    height: 100vh;
 }
 
 main>section>section:nth-child(7) h1{
@@ -380,19 +404,167 @@ main>section>section:nth-child(7) h1{
 }
 
 main>section>section:nth-child(7)>pre:nth-child(2){
+    position:absolute;
+    left: 306px;
+    top: 48px;
+
+}
+
+main>section>section:nth-child(7)>pre:nth-child(3){
+    position: absolute;
+    top: 123px;
+    left: 292px;
+
+}
+
+main>section>section:nth-child(7)>hr:nth-child(4){
     position: relative;
-    left: 416px;
-    top: 30px;
+    top: 128px;
+}
+main>section>section:nth-child(7)>hr:nth-child(4){
+    width: 1414px;
+}
+
+
+main>section>section:nth-child(7)>section:nth-child(5){
+    position: relative;
+    display: flex;
+    top: 142px;
+    height: 200px;
+}
+
+main>section>section:nth-child(7)>section:nth-child(5) div{
+    width: 50%;
+    height: 170px;
+}
+
+main>section>section:nth-child(7)>section:nth-child(6)>div:nth-child(1){
+    position: relative;
+    top: -34px;
+}
+
+main>section>section:nth-child(7)>section:nth-child(6)>div:nth-child(2){
+    position: absolute;
+    left: 505px;
+    top: 190px;
+}
+
+main>section>section:nth-child(7)>section:nth-child(6)>div:nth-child(3){
+    position: absolute;
+    top: 214px;
+    left: 1021px;
+}
+
+main>section>section:nth-child(7)>div:nth-child(7){
+    position: absolute;
+    top: 299px;
+    left: 148px;
+    font-size: 17px;
+}
+
+
+main>section>section:nth-child(7)>section:nth-child(8){
+    display: flex;
+    position: absolute;
+    /*left: 364px;*/
+    /*bottom: 187px;*/
+    left: 402px;
+    bottom: 410px;
+}
+
+main>section>section:nth-child(7)>section:nth-child(8)>div{
+    width: 62px;
+
+}
+main>section>section:nth-child(7)>section:nth-child(8) img{
+   width: 32px;
+}
+
+/*main>section>section:nth-child(7)>hr:nth-child(9){*/
+/*    width: 1414px;*/
+/*}*/
+
+main>section>section:nth-child(7)>p:nth-child(9){
 
 }
 
 
+main>section>section:nth-child(7) fieldset{
+border: none;
+}
+
+.YourName{
+    letter-spacing: 1px;
+    left: 5vw;
+    position: relative;
+    width: 35vw;
+    height: 5vh;
+    font-family: Cambria;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #E0F2F1;
+}
+
+.YourAddress{
+    left: 5vw;
+    top: 10px;
+    position: relative;
+    width: 35vw;
+    height: 5vh;
+    margin-bottom: 20px;
+    /*padding: 5px 15px 5px 15px;*/
+    font-family: Cambria;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #E0F2F1;
+
+}
+
+.YourMessage{
+    left: 5vw;
+    top: 10px;
+    position: relative;
+    width: 35vw;
+    height: 15vh;
+    margin-bottom: 20px;
+    /* padding: 5px 15px 5px 15px; */
+    font-family: Cambria;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #E0F2F1;
+
+}
+.Go{
+    background-color: #E0F2F1;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
+
+/*Contact section end*/
+
+footer{
+    position: relative;
+    top: 77px;
+    height: 40px;
+    background-color: black;
+}
 
 
-
-
-
-
+footer p{
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    left: 31vw;
+    font-size: 1.5vw;
+    top: 1vh;
+}
 
 
 

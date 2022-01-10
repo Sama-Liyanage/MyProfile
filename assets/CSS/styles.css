@@ -125,7 +125,6 @@ main>section>section:nth-child(2)>section:nth-child(2)>a:nth-child(5){
     position: relative;
     left: 546px;
     top: 21px;
-
 }
 
 main>section>section:nth-child(2)>section:nth-child(2)>div:nth-child(6){
@@ -382,6 +381,14 @@ main>section>section:nth-child(6){
     top: 136px;
     background-color: #FAF9F6;
     height: 100vh;
+}
+
+main>section>section:nth-child(6) h1{
+    position: relative;
+    left: 45px;
+    top: 20px;
+    background-color: #FFF3E0;
+    width: 163px;
 
 }
 main>section>section:nth-child(6)>section:nth-child(2){

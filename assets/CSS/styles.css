@@ -149,8 +149,9 @@ main>section>section:nth-child(2)>section:nth-child(2)>div:nth-child(6) img{
 main>section>section:nth-child(3) {
     display: flex;
     position: relative;
-    top: 180px;
+    top: 86px;
     height: 100vh;
+    background-color: #FFF5EE;
 }
 
 main>section>section:nth-child(3) dfn{
@@ -258,8 +259,8 @@ main>section>section:nth-child(3)>div:nth-child(5)>pre{
 /*My skills*/
 main>section>section:nth-child(4) {
     position: relative;
-    top: 180px;
-    background-color: #FAF9F6;
+    top: 84px;
+    /*background-color: #FAF9F6;*/
     width:auto;
     height: 100vh;
 
@@ -275,20 +276,220 @@ main>section>section:nth-child(4)>h1{
 
 }
 
-main>section>section:nth-child(4)>section{
-    width: 895px;
-    display: grid;
-    background-color: #eceff1;
-    width: 820px;
-    /*grid-template-rows:150px 150px 150px 150px;*/
-    /*grid-template-columns:200px 200px 200px;*/
-    grid-template-rows: repeat(3,150px);
-    grid-template-columns:repeat(4,200px);
-    grid-gap:20px 30px;
-    top: 100px;
+/*main>section>section:nth-child(4)>section{*/
+/*    width: 895px;*/
+/*    display: grid;*/
+/*    !*background-color: #eceff1;*!*/
+/*    width: 820px;*/
+/*    !*grid-template-rows:150px 150px 150px 150px;*!*/
+/*    !*grid-template-columns:200px 200px 200px;*!*/
+/*    grid-template-rows: repeat(3,150px);*/
+/*    grid-template-columns:repeat(4,200px);*/
+/*    grid-gap:20px 30px;*/
+/*    top: 100px;*/
+/*    position: absolute;*/
+/*    left: 344px;*/
+/*}*/
+
+/*div 1*/
+main>section>section:nth-child(4)>section>div:nth-child(1){
     position: absolute;
-    left: 344px;
+    left: 96px;
+    top: 81px;
 }
+main>section>section:nth-child(4)>section>div:nth-child(1)>img{
+
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(1)>pre{
+    position: relative;
+    right: 40px;
+}
+
+/*div 2*/
+main>section>section:nth-child(4)>section>div:nth-child(2){
+    position: absolute;
+    left: 436px;
+    top: 94px;
+}
+main>section>section:nth-child(4)>section>div:nth-child(2)>img{
+    width: 62px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(2)>pre{
+    position: relative;
+    right: 58px;
+    top: 10px;
+}
+
+/*div 3*/
+main>section>section:nth-child(4)>section>div:nth-child(3){
+    position: absolute;
+    left: 812px;
+    top: 96px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(3)>img{
+    width: 69px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(3)>pre{
+    position: relative;
+    right: 72px;
+    top: 5px;
+}
+
+/*div 4*/
+main>section>section:nth-child(4)>section>div:nth-child(4){
+    position: absolute;
+    left: 1115px;
+    top: 90px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(4)>img{
+    width: 142px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(4)>pre{
+    position: relative;
+    right: 20px;
+}
+
+/*div 5*/
+main>section>section:nth-child(4)>section>div:nth-child(5){
+    position: absolute;
+    top: 297px;
+    left: 94px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(5)>img{
+    width: 90px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(5)>pre{
+    position: relative;
+    right: 39px;
+    top: 20px;
+}
+
+/*div 6*/
+main>section>section:nth-child(4)>section>div:nth-child(6){
+    position: absolute;
+    top: 270px;
+    left: 416px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(6)>img{
+    width: 128px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(6)>pre{
+    position: relative;
+    right: 40px;
+}
+
+/*div 7*/
+main>section>section:nth-child(4)>section>div:nth-child(7){
+    position: absolute;
+    top: 280px;
+    left: 777px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(7)>img{
+    width: 128px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(7)>pre{
+    position: relative;
+    right: 18px;
+    top: 12px;
+}
+
+/*div 8*/
+main>section>section:nth-child(4)>section>div:nth-child(8){
+    position: absolute;
+    top: 287px;
+    left: 1126px;
+
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(8)>img{
+    width: 120px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(8)>pre{
+    position: relative;
+    right: 30px;
+}
+
+/*div 9*/
+main>section>section:nth-child(4)>section>div:nth-child(9){
+    position: absolute;
+    top: 510px;
+    left: 82px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(9)>img{
+    width: 120px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(9)>pre{
+    position: relative;
+    right: 31px;
+}
+
+/*div 10*/
+main>section>section:nth-child(4)>section>div:nth-child(10){
+    position: absolute;
+    top: 516px;
+    left: 423px;
+
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(10)>img{
+    width: 90px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(10)>pre{
+    position: relative;
+    right: 30px;
+}
+
+
+/*div 11*/
+main>section>section:nth-child(4)>section>div:nth-child(11){
+    position: absolute;
+    top: 480px;
+    left: 771px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(11)>img{
+    width: 159px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(11)>pre{
+    position: relative;
+   bottom: 50px;
+}
+
+
+/*div 12*/
+main>section>section:nth-child(4)>section>div:nth-child(12){
+    position: absolute;
+    top: 509px;
+    left: 1111px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(12)>img{
+    width: 159px;
+}
+
+main>section>section:nth-child(4)>section>div:nth-child(12)>pre{
+    position: relative;
+    right: 20px;
+}
+
+
 /*My Skills Section end*/
 /*----------------------------------------------------------------------------------------------*/
 
@@ -296,7 +497,7 @@ main>section>section:nth-child(4)>section{
 /*Education Section Start*/
 main>section>section:nth-child(5){
     position: relative;
-    top: 158px;
+    top: 82px;
     height: 500px;
     background-color:#EDF2F8;
 
@@ -378,7 +579,7 @@ main>section>section:nth-child(5)>blockquote:nth-child(5){
 
 main>section>section:nth-child(6){
     position: relative;
-    top: 136px;
+    top: 61px;
     background-color: #FAF9F6;
     height: 100vh;
 }
@@ -476,7 +677,7 @@ main>section>section:nth-child(6)>section:nth-child(2)>section>div:nth-child(4) 
 main>section>section:nth-child(7){
     background-color: #fafafa;
     position: relative;
-    top: 115px;
+    top:39px;
     height: 100vh;
 }
 
@@ -632,7 +833,7 @@ border: none;
 
 footer{
     position: relative;
-    top: 77px;
+    top: 42px;
     height: 40px;
     background-color: black;
 }

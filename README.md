@@ -1,5 +1,4 @@
-#This is MyProfile.
+#Web Portfolio
+###Responsive Personal Website
 
-##Institute of Software Engineering 
-
-![image of programmer](assets/images/Programmer.jpg)
+![Image of Web Page]() 

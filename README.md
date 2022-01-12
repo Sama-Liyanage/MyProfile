@@ -35,7 +35,7 @@
 
 * **GitHub Pages URL for MyProfile-** https://sama-liyanage.github.io/MyProfile/
 
-* **000WebHost URL-** 
+* **000WebHost URL-** https://samadhinilakshana.000webhostapp.com/
 
 * **GitHub Link-** https://github.com/Sama-Liyanage
 

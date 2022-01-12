@@ -1,11 +1,11 @@
-#Web Portfolio
+# Web Portfolio
 
-###Responsive Personal Website
+### Responsive Personal Website
 
 ![Image of Web Page](assets/images/ReadMe%20Images/Home%20Section.png) 
 
 
-##Table of contents
+## Table of contents
 - [Built With](#builtwith)
 - [Screenshots](#builtwith)
 - [Links](#links)
@@ -25,7 +25,7 @@
 ![Image of Web Page](assets/images/ReadMe%20Images/Project%20Section.png)
 ![Image of Web Page](assets/images/ReadMe%20Images/Contact%20Section.png) 
 
-###Links
+### Links
 
 * **SiteMap URL-** https://www.gloomaps.com/lyjfKtm9Vl
 
@@ -38,6 +38,8 @@
 * **000WebHost URL-** 
 
 * **GitHub Link-** https://www.linkedin.com/in/samadhi-nilakshana-531305226/
+
+ _Including CSS Assignments_
 
 
 

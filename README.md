@@ -33,7 +33,7 @@
 
 * **Mockup URL-** https://www.figma.com/file/lOar7hsBSQV2QQStcO7PXJ/My-Web-Page-MockUp?node-id=0%3A1
 
-* **GitHub Pages URL for MyProfile-** 
+* **GitHub Pages URL for MyProfile-** https://sama-liyanage.github.io/MyProfile/
 
 * **000WebHost URL-** 
 

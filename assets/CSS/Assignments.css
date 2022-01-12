@@ -1,0 +1,65 @@
+section>div>a:nth-child(1) img{
+    border: groove;
+    left: 32px;
+    position: relative;
+}
+
+section>div>a:nth-child(2) img{
+    border: groove;
+    position: relative;
+    width: 410px;
+    left: 101px;
+}
+section>div>a:nth-child(3) img{
+    border: groove;
+    position: relative;
+    left: 157px;
+    width: 422px;
+}
+section>div>a:nth-child(4) img{
+    border: groove;
+    position: relative;
+    left: 34px;
+    top: 20px;
+}
+section>div>a:nth-child(5) img{
+    border: groove;
+    position: relative;
+    top: 24px;
+    left: 102px;
+
+}
+section>div>a:nth-child(6) img {
+    border: groove;
+    position: relative;
+    top: 20px;
+    left: 173px;
+}
+section>div>a:nth-child(7) img{
+    border: groove;
+    position: relative;
+    left: 34px;
+    top: 55px;
+
+}
+section>div>a:nth-child(8) img{
+    border: groove;
+    position: relative;
+    left: 102px;
+    top: 58px;
+
+}
+section>div>a:nth-child(9) img{
+    border: groove;
+    position: relative;
+    left: 173px;
+    top: 55px;
+
+}
+section>div>a:nth-child(10) img{
+    border: groove;
+    position: relative;
+    top: 89px;
+    left: 33px;
+
+}

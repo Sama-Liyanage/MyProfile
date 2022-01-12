@@ -92,33 +92,38 @@ main>section>section:nth-child(2)>section:nth-child(2){
     width: 664px;
     bottom: 198px;
     background-color: #C4C4C4;
+    height: 315px;
 }
 
 main>section>section:nth-child(2)>section:nth-child(2) dfn{
-    font-size: 20px;
+    font-size: 31px;
     position: relative;
     left: 244px;
     font-family: 'Roboto Condensed';
     font-style: normal;
+    text-decoration: underline;
 }
 
 main>section>section:nth-child(2)>section:nth-child(2) pre:nth-child(2){
     position: relative;
-    left: 55px;
-    font-size: 15px;
+    left: 17px;
+    font-size: 20px;
+
 }
 
 
 main>section>section:nth-child(2)>section:nth-child(2) pre:nth-child(3){
     position: relative;
     left: 81px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
 main>section>section:nth-child(2)>section:nth-child(2)>pre:nth-child(4){
     position: relative;
-    right: 185px;
+    right: 237px;
+    top: 21px;
+    font-size: 19px;
 }
 
 main>section>section:nth-child(2)>section:nth-child(2)>a:nth-child(5){
@@ -294,6 +299,7 @@ main>section>section:nth-child(4)>h1{
 /*    position: absolute;*/
 /*    left: 344px;*/
 /*}*/
+
 
 /*div 1*/
 main>section>section:nth-child(4)>section>div:nth-child(1){
@@ -666,6 +672,24 @@ main>section>section:nth-child(6)>section:nth-child(2)>section>div:nth-child(4) 
         transform: translateX(-75%);
     }
 }
+
+
+main>section>section:nth-child(6) button{
+    position: relative;
+    width: 170px;
+    bottom: -69vh;
+    background-color: #d97f76;
+    height: 5vh;
+    left: 43vw;
+    border-radius: 10px;
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+
+/*main>section>section:nth-child(6) button a{*/
+/*    text-decoration: none;*/
+/*}*/
+
 
 
 

@@ -37,7 +37,7 @@
 
 * **000WebHost URL-** 
 
-* **GitHub Link-** https://www.linkedin.com/in/samadhi-nilakshana-531305226/
+* **GitHub Link-** https://github.com/Sama-Liyanage
 
  _Including CSS Assignments_
 

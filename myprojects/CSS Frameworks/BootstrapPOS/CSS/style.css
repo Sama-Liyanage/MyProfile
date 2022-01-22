@@ -1,3 +1,21 @@
-.div{
+footer{
+    position: fixed;
+    top: 720px;
+    height: 40px;
+    background-color: black;
+}
+
+footer p{
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    left: 31vw;
+    top: 1vh;
+}
+
+#carouselExampleDark{
+
 
 }

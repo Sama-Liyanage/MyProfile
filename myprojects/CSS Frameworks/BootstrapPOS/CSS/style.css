@@ -15,7 +15,16 @@ footer p{
     top: 1vh;
 }
 
-#carouselExampleDark{
+#my-form{
+    position: relative;
+    top: 40px;
+    padding:12px;
+}
 
-
+#search-color{
+    color: #a5d6a7;
+}
+.card {
+    position: relative;
+    top: 20px;
 }

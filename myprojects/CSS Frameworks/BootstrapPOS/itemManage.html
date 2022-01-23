@@ -44,17 +44,120 @@
 </nav>
 
 <main>
+    <main class="container-fluid">
+        <!--    <div class="shadow-lg p-3 mb-5 bg-body rounded text-center w-25">Manage Customer</div>-->
+        <section class="row" >
+
+            <div class="col-5">
+                <form id="my-form"  width="60px">
+                    <div class="mb-auto">
+                        <label class="fw-bold" for="itemCode" class="form-label">Item Code</label>
+                        <input type="text" class="form-control fw-lighter" id="itemCode" aria-describedby="itemCode"  placeholder="Enter Item Code">
+                    </div>
+
+                    <div class="mb-auto">
+                        <label class="fw-bold" for="itemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control fw-lighter" id="itemName" aria-describedby="itemName" placeholder="Enter Item Name">
+                    </div>
+
+                    <div class="mb-auto">
+                        <label class="fw-bold" for="customerAddress" class="form-label">Item Price</label>
+                        <input type="text" class="form-control fw-lighter" id="customerAddress" aria-describedby="customerAddress" placeholder="Enter Item Price">
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="fw-bold" for="customerContact" class="form-label">Item Quantity</label>
+                        <input type="text" class="form-control fw-lighter" id="customerContact" aria-describedby="customerContact" placeholder="Enter Item Quantity">
+                    </div>
 
 
-    <footer class="container-fluid">
-        <div>
-            <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
-        </div>
+                    <button type="submit" class="btn btn-success mt-4" >Save</button>
+                    <button type="submit" class="btn btn-dark mt-4">Update</button>
+                    <button type="submit" class="btn btn-danger mt-4">Clear</button>
+                </form>
+            </div>
+
+            <div class=" col-5">
+                <div class="card ">
+                    <form class="mt-5">
+                        <div class="mb-1">
+                            <div class="card-header align-content-center">
+                                <label class="form-label w-50">Item Search</label></div>
+                                    <div class="card-body">
+                                <input type="text" class="form-control w-50" id="Item-Search" placeholder="Item Code/Name">
+
+                                <button type="submit" class="btn btn-success mt-2">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mt-5">
+            <table class="table table table-striped table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Item-Code</th>
+                    <th scope="col">Item-Name</th>
+                    <th scope="col">Item-Price</th>
+                    <th scope="col">Item Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">#01</th>
+                    <td>Insuline Syringes</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">#02</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">#03</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">#04</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">#05</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </section>
 
 
-    </footer>
+
+    </main>
+
+
+
+
 </main>
+<footer class="container-fluid">
+    <div>
+        <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
+    </div>
 
 
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

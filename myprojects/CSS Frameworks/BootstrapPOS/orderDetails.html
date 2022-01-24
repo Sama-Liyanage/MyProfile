@@ -48,7 +48,7 @@
 
 <section class="row">
     <div class="card col-5">
-        <div class="card-header  bg-success ">
+        <div class="card-header align-content-center bg-success">
             Invoice Details
         </div>
 
@@ -113,8 +113,49 @@
         </div>
     </div>
 
+</section>
 
+<section class="row">
+    <div class="card mt-5 col-6">
 
+        <div class="card-body ">
+
+            <div col="6">
+            <label class="fw-bold" for="total" class="form-label">Total</label>
+            <input type="text" class="form-control fw-lighter" id="total" aria-describedby="total" placeholder="Total">
+            </div>
+
+            <div col="6">
+                <label class="fw-bold" for="subTotal" class="form-label">Sub Total</label>
+                <input type="text" class="form-control fw-lighter" id="subTotal" aria-describedby="subTotal" placeholder="Sub Total">
+            </div>
+
+            <div col="6">
+                <label class="fw-bold" for="cash" class="form-label">Cash</label>
+                <input type="text" class="form-control fw-lighter" id="cash" aria-describedby="cash" placeholder="Cash">
+            </div>
+
+            <label class="fw-bold" for="discount" class="form-label">Discount</label>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="discount" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discount
+                </button>
+                <ul class="discount" aria-labelledby="Discount">
+<!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                </ul>
+            </div>
+
+            <div col="6">
+                <label class="fw-bold" for="balance" class="form-label">Balance</label>
+                <input type="text" class="form-control fw-lighter" id="balance" aria-describedby="balance" placeholder="Balance">
+            </div>
+
+            <button type="submit" class="btn btn-success mt-2">Purchase</button>
+
+        </div>
+    </div>
 </section>
 
 
@@ -144,15 +185,19 @@
         </tr>
         <tr>
             <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> ---</td>
+            <td> ---</td>
+            <td> --- </td>
+            <td> --- </td>
+
         </tr>
         <tr>
             <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>---</td>
+            <td>---</td>
+            <td>---</td>
+            <td>---</td>
+
         </tr>
         </tbody>
     </table>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capsule Medical-Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+
+</head>
+<body>
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="index.html">
+      <img src="assets/Images/Logo1.jpg" alt="Logo of Store" width="40" height="30" class="d-inline-block align-text-top">
+     Capsule
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link"  id="navItem1" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navItem2" href="#">Manage Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navItem3" href="#">Manage Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navItem4" href="#">Order Details</a>
+        </li>
+      </ul>
+    </div>
+<!-- search-->
+    <form  class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-pill bg-secondary" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main>
+  <section id="home" >
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class= "carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="assets/Images/Pharmacy2.jpg" class="d-block w-100 " alt="Image of pharmacy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The best way to get your prescription</h5>
+          <p>A pharmacy for all your needs</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/Images/Pharmacy1.jpg" class="d-block w-100" alt="Image of pharamcy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Dedicate to health and wellness</h5>
+          <p>The pharmacy that cares for the wellbeing of you and your family.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Images/Pharmacy.jpg" class="d-block w-100" alt="Image of pharmacy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>More than just a shop</h5>
+          <p>Your health.Our expertise.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </section>
+
+<!--  Customer Page-->
+  <section id="customerPage" style="display: none">
+    <section class="row" >
+
+      <div class="col-5">
+        <form id="my-form"  width="60px">
+          <div class="mb-auto">
+            <label class="fw-bold" for="customerID" class="form-label">Customer ID</label>
+            <input type="text" class="form-control fw-lighter" id="customerID" aria-describedby="customerID"  placeholder="Enter Customer Id">
+          </div>
+
+          <div class="mb-auto">
+            <label class="fw-bold" for="customerName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control fw-lighter" id="customerName" aria-describedby="customerName" placeholder="Enter Customer Name">
+          </div>
+
+          <div class="mb-auto">
+            <label class="fw-bold" for="customerAddress" class="form-label">Customer Address</label>
+            <input type="text" class="form-control fw-lighter" id="customerAddress" aria-describedby="customerAddress" placeholder="Enter Customer Address">
+          </div>
+
+          <div class="mb-10">
+            <label class="fw-bold" for="customerContact" class="form-label">Customer Contact</label>
+            <input type="text" class="form-control fw-lighter" id="customerContact" aria-describedby="customerContact" placeholder="Enter Customer Mobile Number">
+          </div>
+
+
+          <button type="submit" class="btn btn-success mt-4" >Save</button>
+          <button type="submit" class="btn btn-dark mt-4">Update</button>
+          <button type="submit" class="btn btn-danger mt-4">Clear</button>
+        </form>
+      </div>
+
+      <div class=" col-5">
+        <div class="card mt-5 ">
+          <form class="">
+            <div class="mb-1">
+              <div class="card-header align-content-center bg-info text-dark">
+                <label class="form-label w-50">Customer Search</label></div>
+              <div class="card-body">
+                <input type="text" class="form-control w-50" id="Customer-Search" placeholder="Customer Id">
+
+                <button type="submit" class="btn btn-success mt-2">Submit</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mt-5">
+      <table class="table table table-striped table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">Customer Id</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Customer Address</th>
+          <th scope="col">Customer Telephone Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">C001</th>
+          <td>Devika Wijemanna</td>
+          <td>No.14, Silver Road,Kapuhempala,Galle.</td>
+          <td>0705480548</td>
+        </tr>
+        <tr>
+          <th scope="row">C002</th>
+          <td>Renuka Priyadarshanai</td>
+          <td>No.30, Mampitiya,Kalegana Rd, Galle.</td>
+          <td>0766807962</td>
+        </tr>
+        <tr>
+          <th scope="row">COO3</th>
+          <td>Amathi Madushika</td>
+          <td>no.58, Kapuhempala Rd, Galle.</td>
+          <td>0710188898</td>
+        </tr>
+        <tr>
+          <th scope="row">COO4</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">COO5</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+<!--  Item Page-->
+  <section id="itemPage" style="display: none">
+  <section class="row" >
+
+    <div class="col-5">
+      <form id="myForm"  width="60px">
+        <div class="mb-auto">
+          <label class="fw-bold" for="itemCode" class="form-label">Item Code</label>
+          <input type="text" class="form-control fw-lighter" id="itemCode" aria-describedby="itemCode"  placeholder="Enter Item Code">
+        </div>
+
+        <div class="mb-auto">
+          <label class="fw-bold" for="itemName" class="form-label">Item Name</label>
+          <input type="text" class="form-control fw-lighter" id="itemName" aria-describedby="itemName" placeholder="Enter Item Name">
+        </div>
+
+        <div class="mb-auto">
+          <label class="fw-bold" for="itemPrice" class="form-label">Item Price</label>
+          <input type="text" class="form-control fw-lighter" id="itemPrice" aria-describedby="itemPrice" placeholder="Enter Item Price">
+        </div>
+
+        <div class="mb-10">
+          <label class="fw-bold" for="itemQuantity" class="form-label">Item Quantity</label>
+          <input type="text" class="form-control fw-lighter" id="itemQuantity" aria-describedby="itemQuantity" placeholder="Enter Item Quantity">
+        </div>
+
+
+        <button type="submit" class="btn btn-success mt-4" >Save</button>
+        <button type="submit" class="btn btn-dark mt-4">Update</button>
+        <button type="submit" class="btn btn-danger mt-4">Clear</button>
+      </form>
+    </div>
+
+    <div class=" col-5">
+      <div class="card mt-5">
+        <form class>
+          <div class="mb-1">
+            <div class="card-header align-content-center mt-0 bg-warning text-dark ">
+              <label class="form-label w-50">Item Search</label></div>
+            <div class="card-body">
+              <input type="text" class="form-control w-50" id="Item-Search" placeholder="Item Code/Name">
+
+              <button type="submit" class="btn btn-success mt-2">Submit</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="mt-5">
+    <table class="table table table-striped table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">Item-Code</th>
+        <th scope="col">Item-Name</th>
+        <th scope="col">Item-Price</th>
+        <th scope="col">Item Quantity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">I001</th>
+        <td>Insuline Syringes</td>
+        <td>2000</td>
+        <td>500 Syringes</td>
+      </tr>
+      <tr>
+        <th scope="row">I002</th>
+        <td>Bon Appetite</td>
+        <td>1100</td>
+        <td>100 Bottles</td>
+      </tr>
+      <tr>
+        <th scope="row">I003</th>
+        <td>Lexotrim Oralususp</td>
+        <td>870</td>
+        <td>30 Bottles</td>
+      </tr>
+      <tr>
+        <th scope="row">I004</th>
+        <td>Baby Care Gripe Water</td>
+        <td>1220</td>
+        <td>100 Bottles</td>
+      </tr>
+      <tr>
+        <th scope="row">I005</th>
+        <td>Leximoxoral Susp</td>
+        <td>620</td>
+        <td>20 Bottles</td>
+      </tr>
+
+      <tr>
+        <th scope="row">I006</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th scope="row">I007</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+  </section>
+
+<!--  Order Details Page-->
+  <section id="orderPage" style="display: none">
+  <section class="row m-1" >
+    <div class="card col-5 bg-light">
+      <div class="card-header align-content-center bg-success">
+        Invoice Details
+      </div>
+
+      <div class="card-body">
+
+        <div class=" row">
+          <div class="col-6 ">
+            <label class="fw-bold" for="orderId" class="form-label">Order Id</label>
+            <input type="text" class="form-control w-50" id="orderId" placeholder="Order Id"></div>
+
+
+          <div class="col-6">
+            <label class="fw-bold" for="date" class="form-label">Date</label>
+            <input type="text" class="form-control w-50" id="date" placeholder="Date"></div>
+
+          <div class="col-6">
+            <label class="fw-bold" for="customerId" class="form-label">Customer Id</label>
+            <input type="text" class="form-control w-50" id="customer Id" placeholder="Customer Id"></div>
+
+          <div class="col-6">
+            <label class="fw-bold" for="customerName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control w-50" id="customer Name" placeholder="Customer Name"></div>
+        </div>
+
+        <label class="fw-bold" for="customerSalary" class="form-label">Customer Salary</label>
+        <input type="text" class="form-control w-50" id="customerSalary" placeholder="Customer Name">
+
+        <label class="fw-bold" for="customerAddress" class="form-label">Customer Address</label>
+        <input type="text" class="form-control w-50" id="customer Address" placeholder="Customer Address">
+      </div>
+    </div>
+
+
+    <div class="card col-5 m-auto">
+      <div class="card-header bg-success">
+        Invoice Details
+      </div>
+
+      <div class="card-body bg-light ">
+        <div class=" row">
+          <div class="col-6 ">
+            <label class="fw-bold" for="item" class="form-label">Item</label>
+            <input type="text" class="form-control w-50" id="item" placeholder="Item"></div>
+
+
+          <div class="col-6">
+            <label class="fw-bold" for="itemCode" class="form-label">Item Code</label>
+            <input type="text" class="form-control w-50" id="item Code" placeholder="Item I001"></div>
+
+          <div class="col-6">
+            <label class="fw-bold" for="itemName" class="form-label">Item Name</label>
+            <input type="text" class="form-control w-50" id="item Name" placeholder="Item Name"></div>
+
+          <div class="col-6">
+            <label class="fw-bold" for="price" class="form-label">Price</label>
+            <input type="text" class="form-control w-50" id="price" placeholder="Price"></div>
+        </div>
+
+        <label class="fw-bold" for="orderQuantity" class="form-label">Order Quantity</label>
+        <input type="text" class="form-control w-50" id="orderQuantity" placeholder="Order Quantity">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="row m-1" >
+    <div class="card mt-5 col-6 bg-light">
+
+      <div class="card-body ">
+
+        <div col="6">
+          <label class="fw-bold" for="total" class="form-label">Total</label>
+          <input type="text" class="form-control fw-lighter" id="total" aria-describedby="total" placeholder="Total">
+        </div>
+
+        <div col="6">
+          <label class="fw-bold" for="subTotal" class="form-label">Sub Total</label>
+          <input type="text" class="form-control fw-lighter" id="subTotal" aria-describedby="subTotal" placeholder="Sub Total">
+        </div>
+
+        <div col="6">
+          <label class="fw-bold" for="cash" class="form-label">Cash</label>
+          <input type="text" class="form-control fw-lighter" id="cash" aria-describedby="cash" placeholder="Cash">
+        </div>
+
+        <label class="fw-bold" for="discount" class="form-label">Discount</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="discount" data-bs-toggle="dropdown" aria-expanded="false">
+            Discount
+          </button>
+          <ul class="discount" aria-labelledby="Discount">
+            <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+            <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+            <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+          </ul>
+        </div>
+
+        <div col="6">
+          <label class="fw-bold" for="balance" class="form-label">Balance</label>
+          <input type="text" class="form-control fw-lighter" id="balance" aria-describedby="balance" placeholder="Balance">
+        </div>
+
+        <button type="submit" class="btn btn-success mt-2">Purchase</button>
+
+      </div>
+    </div>
+  </section>
+
+  <table class="table table table-bordered border-dark mt-5">
+    <thead>
+    <tr>
+      <th scope="col">Item Code</th>
+      <th scope="col">Item Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">I010</th>
+      <td>Surgical spirits</td>
+      <td>320</td>
+      <td>2</td>
+      <td>640</td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td> ---</td>
+      <td> ---</td>
+      <td> --- </td>
+      <td> --- </td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>---</td>
+      <td>---</td>
+      <td>---</td>
+      <td>---</td>
+
+    </tr>
+    </tbody>
+  </table>
+  </section>
+
+</main>
+
+  <footer class="container-fluid">
+    <div>
+      <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
+    </div>
+  </footer>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

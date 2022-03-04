@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Capsule Medical-Store</title>
@@ -93,29 +93,41 @@
       <div class="col-5 m-5">
         <form id="my-form"  width="60px">
           <div class="mb-auto">
-            <label class="fw-bold" for="customerID" class="form-label">Customer ID</label>
-            <input type="text" class="form-control fw-lighter" id="customerID" aria-describedby="customerID"  placeholder="Enter Customer Id">
+            <label class="fw-bold" for="txtCusID" class="form-label">Customer ID</label>
+            <input type="text" class="form-control fw-lighter" id="txtCusID" aria-describedby="customerID"  placeholder="Enter Customer Id">
+            <small class="text-danger" id="errorCustomerId" style="display: none">! Wrong format
+              (Format:C-001) </small>
+
           </div>
 
           <div class="mb-auto">
-            <label class="fw-bold" for="customerName" class="form-label">Customer Name</label>
-            <input type="text" class="form-control fw-lighter" id="customerName" aria-describedby="customerName" placeholder="Enter Customer Name">
+            <label class="fw-bold" for="txtCusName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control fw-lighter" id="txtCusName" aria-describedby="customerName" placeholder="Enter Customer Name">
+            <small class="text-danger" id="errorCustomerName" style="display: none">! Wrong format (Only
+              A-z,space and . can be included) </small>
+
           </div>
 
           <div class="mb-auto">
-            <label class="fw-bold" for="customerAddress" class="form-label">Customer Address</label>
-            <input type="text" class="form-control fw-lighter" id="customerAddress" aria-describedby="customerAddress" placeholder="Enter Customer Address">
+            <label class="fw-bold" for="txtCusAddress" class="form-label">Customer Address</label>
+            <input type="text" class="form-control fw-lighter" id="txtCusAddress" aria-describedby="customerAddress" placeholder="Enter Customer Address">
+            <small class="text-danger" id="errorCustomerAddress" style="display: none">! Wrong format (Only
+              A-z,0-9,/,space and . can be included) </small>
+
           </div>
 
           <div class="mb-10">
-            <label class="fw-bold" for="customerContact" class="form-label">Customer Contact</label>
-            <input type="text" class="form-control fw-lighter" id="customerContact" aria-describedby="customerContact" placeholder="Enter Customer Mobile Number">
+            <label class="fw-bold" for="txtCusTele" class="form-label">Customer Telephone Number</label>
+            <input type="text" class="form-control fw-lighter" id="txtCusTele" aria-describedby="customerTele" placeholder="Enter Customer Telephone Number">
+            <small class="text-danger" id="errorCustomerTel" style="display: none">! Wrong format (Format:
+              0766612345/076 6612345/076-6612345) </small>
+
           </div>
 
 
-          <button type="submit" class="btn btn-success mt-4" >Save</button>
-          <button type="submit" class="btn btn-dark mt-4">Update</button>
-          <button type="submit" class="btn btn-danger mt-4">Clear</button>
+<!--          <button type="submit" class="btn btn-success mt-4" id="btnCustomer" >Save or Update</button>-->
+<!--          <button type="submit" class="btn btn-dark mt-4" id="btnSearch">Search</button>-->
+<!--          <button type="submit" class="btn btn-danger mt-4">Clear</button>-->
         </form>
       </div>
 
@@ -126,9 +138,13 @@
               <div class="card-header align-content-center bg-info text-dark">
                 <label class="form-label w-50">Customer Search</label></div>
               <div class="card-body">
-                <input type="text" class="form-control w-50" id="Customer-Search" placeholder="Customer Id">
+                <input type="text" class="form-control w-50" id="txtSearchCusID" placeholder="Customer Id">
 
-                <button type="submit" class="btn btn-success mt-2">Submit</button>
+                <button class="btn btn-secondary mt-3" id="cancelCustomer" type="button">Cancel</button>
+                <button class="btn btn-danger mt-3" id="DeleteCustomer" type="button">Delete</button>
+                <button class="btn btn-warning text-white mt-3" id="UpdateCustomer" type="button">Update</button>
+                <button class="btn btn-success mt-3" disabled="true" id="AddCustomer" type="button">Register</button>
+
               </div>
             </div>
 
@@ -145,40 +161,10 @@
           <th scope="col">Customer Id</th>
           <th scope="col">Customer Name</th>
           <th scope="col">Customer Address</th>
-          <th scope="col">Customer Telephone Number</th>
+          <th scope="col">Customer Salary</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        <tbody id="customerTable">
 
         </tbody>
       </table>
@@ -212,9 +198,9 @@
         </div>
 
 
-        <button type="submit" class="btn btn-success mt-4" >Save</button>
-        <button type="submit" class="btn btn-dark mt-4">Update</button>
-        <button type="submit" class="btn btn-danger mt-4">Clear</button>
+<!--        <button type="submit" class="btn btn-success mt-4" >Save</button>-->
+<!--        <button type="submit" class="btn btn-dark mt-4">Update</button>-->
+<!--        <button type="submit" class="btn btn-danger mt-4">Clear</button>-->
       </form>
     </div>
 
@@ -227,7 +213,9 @@
             <div class="card-body">
               <input type="text" class="form-control w-50" id="Item-Search" placeholder="Item Code/Name">
 
-              <button type="submit" class="btn btn-success mt-2">Submit</button>
+              <button type="submit" class="btn btn-success mt-4" >Save or Update</button>
+              <button type="submit" class="btn btn-dark mt-4">Search</button>
+              <button type="submit" class="btn btn-danger mt-4">Clear</button>
             </div>
           </div>
 
@@ -248,50 +236,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td>/td>
-      </tr>
 
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
       </tbody>
     </table>
   </section>
@@ -318,19 +263,19 @@
             <input type="text" class="form-control w-50" id="date" placeholder="Date"></div>
 
           <div class="col-6">
-            <label class="fw-bold" for="customerId" class="form-label">Customer Id</label>
-            <input type="text" class="form-control w-50" id="customer Id" placeholder="Customer Id"></div>
+            <label class="fw-bold" for="txtCusId" class="form-label">Customer Id</label>
+            <input type="text" class="form-control w-50" id="txtCusId1" placeholder="Customer Id"></div>
 
           <div class="col-6">
-            <label class="fw-bold" for="customerName" class="form-label">Customer Name</label>
-            <input type="text" class="form-control w-50" id="customer Name" placeholder="Customer Name"></div>
+            <label class="fw-bold" for="txtCusName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control w-50" id="txtCusName1" placeholder="Customer Name"></div>
         </div>
 
-        <label class="fw-bold" for="customerSalary" class="form-label">Customer Salary</label>
-        <input type="text" class="form-control w-50" id="customerSalary" placeholder="Customer Name">
+        <label class="fw-bold" for="txtCusAddress" class="form-label">Customer Salary</label>
+        <input type="text" class="form-control w-50" id="txtCusAddress1" placeholder="Customer Name">
 
-        <label class="fw-bold" for="customerAddress" class="form-label">Customer Address</label>
-        <input type="text" class="form-control w-50" id="customer Address" placeholder="Customer Address">
+        <label class="fw-bold" for="txtCusSalary" class="form-label">Customer Address</label>
+        <input type="text" class="form-control w-50" id="txtCusSalary1" placeholder="Customer Address">
       </div>
     </div>
 
@@ -422,43 +367,36 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
 
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-
-    </tr>
     </tbody>
   </table>
+    <footer class="container-fluid">
+      <div>
+        <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
+      </div>
+    </footer>
   </section>
 
 </main>
 
-<footer class="container-fluid">
-    <div>
-      <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
-    </div>
-  </footer>
+<!--<footer class="container-fluid">-->
+<!--    <div>-->
+<!--      <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>-->
+<!--    </div>-->
+<!--  </footer>-->
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="controller/HomeController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/PlaceOrderController.js"></script>
+<script src="model/CustomerDTO.js"></script>
+<script src="model/ItemDTO.js"></script>
+<script src="model/OrderDTO.js"></script>
+<script src="model/OrderDetailsDTO.js"></script>
+
+<!--<script src="assets/js/script.js"></script>-->
 </body>
 </html>

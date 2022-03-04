@@ -17,7 +17,7 @@ $("#txtCusID").keyup(function (e) {
         }
 
     } else {
-        $("#txtCusID").css('border-color', 'Red');
+        $("#txtCusID").css('border-color', '2px solid #eb2f06');
         $("#errorCustomerId").css('display', 'block');
     }
 
@@ -35,7 +35,7 @@ $("#txtCusName").keyup(function (e) {
         }
 
     } else {
-        $("#txtCusName").css('border-color', 'Red');
+        $("#txtCusName").css('border-color', '2px solid #eb2f06');
         $("#errorCustomerName").css('display', 'block');
     }
 
@@ -46,13 +46,13 @@ $("#txtCusName").keyup(function (e) {
 $("#txtCusAddress").keyup(function (e) {
     enableAddCustomer();
     if (regExAddress.test($("#txtCusAddress").val())) {
-        $("#txtCusAddress").css('border-color', 'Green');
+        $("#txtCusAddress").css('border-color', '2px solid #079992');
         $("#errorCustomerAddress").css('display', 'none');
         if (e.key == "Enter") {
             $("#tel").focus();
         }
     } else {
-        $("#txtCusAddress").css('border-color', 'Red');
+        $("#txtCusAddress").css('border-color', '2px solid #eb2f06');
         $("#errorCustomerAddress").css('display', 'block');
     }
 
@@ -61,7 +61,7 @@ $("#txtCusAddress").keyup(function (e) {
 $("#txtCusTele").keyup(function (e) {
     enableAddCustomer();
     if (regExTel.test($("#txtCusTele").val())) {
-        $("#txtCusTele").css('border-color', 'Green');
+        $("#txtCusTele").css('border-color', '2px solid #079992');
         $("#errorCustomerTel").css('display', 'none');
 
         if ($('#AddCustomer').is(':enabled') && e.key == "Enter") {
@@ -69,7 +69,7 @@ $("#txtCusTele").keyup(function (e) {
             $("#txtCusID").focus();
         }
     } else {
-        $("#txtCusTele").css('border-color', 'Red');
+        $("#txtCusTele").css('border-color', '2px solid #eb2f06');
         $("#errorCustomerTel").css('display', 'block');
     }
 

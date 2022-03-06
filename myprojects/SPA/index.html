@@ -178,23 +178,31 @@
     <div class="col-5 m-5">
       <form id="myForm"  width="60px">
         <div class="mb-auto">
-          <label class="fw-bold" for="itemCode" class="form-label">Item Code</label>
-          <input type="text" class="form-control fw-lighter" id="itemCode" aria-describedby="itemCode"  placeholder="Enter Item Code">
+          <label class="fw-bold" for="txtItemId" class="form-label">Item Id</label>
+          <input type="text" class="form-control fw-lighter" id="txtItemId" aria-describedby="itemId"  placeholder="Enter Item Id">
+          <small class="text-danger" id="errorItemCode" style="display: none">! Wrong format (Format :
+            I-001) </small>
         </div>
 
         <div class="mb-auto">
-          <label class="fw-bold" for="itemName" class="form-label">Item Name</label>
-          <input type="text" class="form-control fw-lighter" id="itemName" aria-describedby="itemName" placeholder="Enter Item Name">
+          <label class="fw-bold" for="txtItemName" class="form-label">Item Name</label>
+          <input type="text" class="form-control fw-lighter" id="txtItemName" aria-describedby="itemName" placeholder="Enter Item Name">
+          <small class="text-danger" id="errorItem" style="display: none">! Wrong format (Only A-z, 0-9,
+            space and . can be included) </small>
         </div>
 
         <div class="mb-auto">
-          <label class="fw-bold" for="itemPrice" class="form-label">Item Price</label>
-          <input type="text" class="form-control fw-lighter" id="itemPrice" aria-describedby="itemPrice" placeholder="Enter Item Price">
+          <label class="fw-bold" for="txtItemPrice" class="form-label">Item Price</label>
+          <input type="text" class="form-control fw-lighter" id="txtItemPrice" aria-describedby="itemPrice" placeholder="Enter Item Price">
+          <small class="text-danger" id="errorPrice" style="display: none">! Wrong format (Only 0-9 and .
+            can be included) </small>
         </div>
 
         <div class="mb-10">
-          <label class="fw-bold" for="itemQuantity" class="form-label">Item Quantity</label>
-          <input type="text" class="form-control fw-lighter" id="itemQuantity" aria-describedby="itemQuantity" placeholder="Enter Item Quantity">
+          <label class="fw-bold" for="txtItemQty" class="form-label">Item Quantity</label>
+          <input type="text" class="form-control fw-lighter" id="txtItemQty" aria-describedby="itemQuantity" placeholder="Enter Item Quantity">
+          <small class="text-danger" id="errorQty" style="display: none">! Wrong format (Only numbers can
+            be included) </small>
         </div>
 
 
@@ -213,9 +221,10 @@
             <div class="card-body">
               <input type="text" class="form-control w-50" id="Item-Search" placeholder="Item Code/Name">
 
-              <button type="submit" class="btn btn-success mt-4" >Save or Update</button>
-              <button type="submit" class="btn btn-dark mt-4">Search</button>
-              <button type="submit" class="btn btn-danger mt-4">Clear</button>
+              <button class="btn btn-secondary mt-3" id="cancelItem" type="button">Cancel</button>
+              <button class="btn btn-danger mt-3" id="DeleteItem" type="button">Delete</button>
+              <button class="btn btn-warning text-white mt-3" id="UpdateItem" type="button">Update</button>
+              <button class="btn btn-success mt-3" disabled="true" id="AddItem" type="button">Add</button>
             </div>
           </div>
 
@@ -229,13 +238,13 @@
     <table class="table table table-striped table table-bordered">
       <thead>
       <tr>
-        <th scope="col">Item-Code</th>
+        <th scope="col">Item-Id</th>
         <th scope="col">Item-Name</th>
         <th scope="col">Item-Price</th>
         <th scope="col">Item Quantity</th>
       </tr>
       </thead>
-      <tbody>
+      <tbody id="itemTable">
 
       </tbody>
     </table>

@@ -252,133 +252,189 @@
   </section>
 
 <!--  Order Details Page-->
+
   <section id="orderPage" style="display: none">
-  <section class="row m-1" >
-    <div class="card col-5 bg-light m-5">
-      <div class="card-header align-content-center bg-success">
-        Invoice Details
-      </div>
+    <section class="container-fluid" id="PlaceOrder">
+      <section class="row">
+        <section class="col">
+          <div class=" bg-secondary mt-3 ">
+            <label class="text-white m-2 fw-bold">Invoice Detail</label>
+          </div>
 
-      <div class="card-body">
+          <form class="container-fluid mt-3">
 
-        <div class=" row">
-          <div class="col-6 ">
-            <label class="fw-bold" for="orderId" class="form-label">Order Id</label>
-            <input type="text" class="form-control w-50" id="orderId" placeholder="Order Id"></div>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="orderIdPlaceOrder">Order Id</label>
+              <div class="col-sm-3">
+                <input class="form-control " id="orderIdPlaceOrder" type="text">
+                <small class="text-danger" id="errorOrderId" style="display: none">! Wrong format
+                  (Format:OD-001) </small>
+              </div>
+              <label class="col-sm-1 col-form-label" for="orderDatePlaceOrder">Date</label>
+              <div class="col-sm-5">
+                <input class="form-control " id="orderDatePlaceOrder" type="date">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label " for="selectCustomer">Customer</label>
+              <div class="col-sm-3">
+                <select aria-label="Default select example" class="form-select " id="selectCustomer"></select>
+              </div>
+
+              <label class="col-sm-3 col-form-label" for="cusIdPlaceOrder">Customer Id</label>
+              <div class="col-sm-3">
+                <input class="form-control" id="cusIdPlaceOrder" type="text">
+              </div>
+            </div>
 
 
-          <div class="col-6">
-            <label class="fw-bold" for="date" class="form-label">Date</label>
-            <input type="text" class="form-control w-50" id="date" placeholder="Date"></div>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="cusNamePlaceOrder">Name</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="cusNamePlaceOrder" type="text">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="cusAddressPlaceOrder">Address</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="cusAddressPlaceOrder" type="text">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="cusTelPlaceOrder">Tel</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="cusTelPlaceOrder" type="tel">
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="col">
+          <div class=" bg-secondary mt-3 ">
+            <label class="text-white m-2 fw-bold">Item Detail</label>
+          </div>
 
-          <div class="col-6">
-            <label class="fw-bold" for="txtCusId" class="form-label">Customer Id</label>
-            <input type="text" class="form-control w-50" id="txtCusId1" placeholder="Customer Id"></div>
 
-          <div class="col-6">
-            <label class="fw-bold" for="txtCusName" class="form-label">Customer Name</label>
-            <input type="text" class="form-control w-50" id="txtCusName1" placeholder="Customer Name"></div>
+          <section class="row">
+            <form class="container-fluid mt-3 col ">
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label" for="selectCustomer">Item</label>
+                <div class="col-sm-3">
+                  <select aria-label="Default select example" class="form-select " id="selectItem"></select>
+                </div>
+                <label class="col-sm-2 col-form-label" for="itemIdPlaceOrder">Item Id</label>
+                <div class="col-sm-4">
+                  <input class="form-control" id="itemIdPlaceOrder" type="text">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label" for="itemNamePlaceOrder">Item Name</label>
+                <div class="col-sm-9">
+                  <input class="form-control" id="itemNamePlaceOrder" type="text">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label" for="pricePlaceOrder">Unit Price</label>
+                <div class="col-sm-9">
+                  <input class="form-control" id="pricePlaceOrder" type="number">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label" for="qtyPlaceOrder">Qty on Hand</label>
+                <div class="col-sm-9">
+                  <input class="form-control" id="qtyPlaceOrder" type="number">
+                </div>
+              </div>
+
+
+              <div class="row mb-3 mt-3 text-center">
+                <label class="col-sm-4 col-form-label" for="cusQtyPlaceOrder">Qty</label>
+                <div class="col-sm-4">
+                  <input class="form-control" id="cusQtyPlaceOrder" type="number">
+                </div>
+
+                <button class="col-sm-2 btn btn-success " id="addCart" type="button">Add</button>
+
+              </div>
+              <small class="text-danger d-flex justify-content-center" id="errorCustomerQty"></small>
+              <small class="text-danger d-flex justify-content-center" id="errorOverCustomerQty"></small>
+
+            </form>
+
+          </section>
+
+
+        </section>
+
+        <div class=" col-3 mt-2">
+
+          <form class="container-fluid mt-3 col ">
+            <div class="row mb-3">
+              <h5 class="col-sm-4 col-form-label">Gross Total</h5>
+              <label class="col-sm-7 col-form-label text-end" id="grossTotalPlaceOrder">0.00 </label>
+
+            </div>
+
+            <div class="row mb-3">
+              <h5 class="col-sm-4 col-form-label" for="netTotalPlaceOrder">Net Total</h5>
+              <label class="col-sm-7 col-form-label text-end" id="netTotalPlaceOrder">0.00 </label>
+
+            </div>
+
+
+            <div class="row mb-3">
+              <h5 class="col-sm-4 col-form-label">Discount</h5>
+              <div class="col-sm-7">
+                <input class="form-control" id="discountPlaceOrder" type="number">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <h5 class="col-sm-4 col-form-label">Cash</h5>
+              <div class="col-sm-7">
+                <input class="form-control" id="cashPlaceOrder" type="number">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <h5 class="col-sm-4 col-form-label">Balance</h5>
+              <label class="col-sm-7 col-form-label text-end" id="balancePlaceOrder">0.00 </label>
+            </div>
+          </form>
+
+
+          <div class="text-center mt-2">
+            <button class="btn btn-danger " id="btnCancelPlaceOrder" type="button">Cancel</button>
+            <button class="btn btn-success " id="btnPlaceOrder" type="button">Place Order</button>
+          </div>
         </div>
 
-        <label class="fw-bold" for="txtCusAddress" class="form-label">Customer Salary</label>
-        <input type="text" class="form-control w-50" id="txtCusAddress1" placeholder="Customer Name">
+      </section>
 
-        <label class="fw-bold" for="txtCusSalary" class="form-label">Customer Address</label>
-        <input type="text" class="form-control w-50" id="txtCusSalary1" placeholder="Customer Address">
-      </div>
-    </div>
+      <section class="row">
+        <section class="col">
+          <section class="container-fluid mt-2">
+            <table class="table ">
+              <thead class="bg-secondary text-center">
+              <tr class="text-white">
+                <th scope="col">Item</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Tot.</th>
+              </tr>
+              </thead>
+              <tbody class="text-center" id="cartTbl">
+
+              </tbody>
+            </table>
+          </section>
+
+        </section>
 
 
-    <div class="card col-5 m-auto">
-      <div class="card-header bg-success">
-        Invoice Details
-      </div>
-
-      <div class="card-body bg-light ">
-        <div class=" row">
-          <div class="col-6 ">
-            <label class="fw-bold" for="item" class="form-label">Item</label>
-            <input type="text" class="form-control w-50" id="item" placeholder="Item"></div>
-
-
-          <div class="col-6">
-            <label class="fw-bold" for="itemCode" class="form-label">Item Code</label>
-            <input type="text" class="form-control w-50" id="item Code" placeholder="Item I001"></div>
-
-          <div class="col-6">
-            <label class="fw-bold" for="itemName" class="form-label">Item Name</label>
-            <input type="text" class="form-control w-50" id="item Name" placeholder="Item Name"></div>
-
-          <div class="col-6">
-            <label class="fw-bold" for="price" class="form-label">Price</label>
-            <input type="text" class="form-control w-50" id="price" placeholder="Price"></div>
-        </div>
-
-        <label class="fw-bold" for="orderQuantity" class="form-label">Order Quantity</label>
-        <input type="text" class="form-control w-50" id="orderQuantity" placeholder="Order Quantity">
-
-      </div>
-    </div>
-
-  </section>
-
-  <section class="row m-1" >
-    <div class="card mt-5 col-6 bg-light">
-
-      <div class="card-body ">
-
-        <div col="6">
-          <label class="fw-bold" for="total" class="form-label">Total</label>
-          <input type="text" class="form-control fw-lighter" id="total" aria-describedby="total" placeholder="Total">
-        </div>
-
-        <div col="6">
-          <label class="fw-bold" for="subTotal" class="form-label">Sub Total</label>
-          <input type="text" class="form-control fw-lighter" id="subTotal" aria-describedby="subTotal" placeholder="Sub Total">
-        </div>
-
-        <div col="6">
-          <label class="fw-bold" for="cash" class="form-label">Cash</label>
-          <input type="text" class="form-control fw-lighter" id="cash" aria-describedby="cash" placeholder="Cash">
-        </div>
-
-        <label class="fw-bold" for="discount" class="form-label">Discount</label>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="discount" data-bs-toggle="dropdown" aria-expanded="false">
-            Discount
-          </button>
-          <ul class="discount" aria-labelledby="Discount">
-            <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-            <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-            <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-          </ul>
-        </div>
-
-        <div col="6">
-          <label class="fw-bold" for="balance" class="form-label">Balance</label>
-          <input type="text" class="form-control fw-lighter" id="balance" aria-describedby="balance" placeholder="Balance">
-        </div>
-
-        <button type="submit" class="btn btn-success mt-2">Purchase</button>
-
-      </div>
-    </div>
-  </section>
-
-  <table class="table table table-bordered border-dark mt-5">
-    <thead>
-    <tr>
-      <th scope="col">Item Code</th>
-      <th scope="col">Item Name</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Total</th>
-    </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
-  </table>
+      </section>
+    </section>
     <footer class="container-fluid">
       <div>
         <p><b><small>Copyright © 2022 Samadhi Nilakshana All rights reserved.</small></b></p>
@@ -403,7 +459,7 @@
 <script src="controller/PlaceOrderController.js"></script>
 <script src="model/CustomerDTO.js"></script>
 <script src="model/ItemDTO.js"></script>
-<script src="model/OrderDTO.js"></script>
+<script src="model/Order.js"></script>
 <script src="model/OrderDetailsDTO.js"></script>
 
 <!--<script src="assets/js/script.js"></script>-->

@@ -32,6 +32,4 @@ function ItemDTO(id, name, price, qty) {
     this.setQty= function (_qty) {
         this.itemQty = _qty;
     }
-
-
 }
